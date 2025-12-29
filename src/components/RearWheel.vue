@@ -5,7 +5,7 @@
 <template>
     <div class="rear-wheel">
         <span>REAR WHEEL</span>
-        <Tire/>
+        <Tire color="YELLOW"/>
     </div>
 </template>
 

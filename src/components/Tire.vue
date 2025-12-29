@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+    color: String
+});
+</script>
 
 <template>
-    <div>BLACK TIRE</div>
+    <div :style="{color: props.color}">{{ props.color || 'BLACK' }} TIRE</div>
 </template>
