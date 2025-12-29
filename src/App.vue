@@ -1,15 +1,23 @@
 <script setup>
 import router from './router';
 
+const routerList = ['component', 'page98', 'page103', 'mission01', 'page108'
+  , 'page110'
+];
+
 
 </script>
 
 <template>
   <div>
     <nav>
-      <router-link to="/component">컴포넌트</router-link>
+      <router-link v-for="item in routerList" :to="`/${item}`">{{ item }}</router-link>
+      <!-- <router-link to="/component">컴포넌트</router-link>
       <router-link to="/page98">page98</router-link>
       <router-link to="/page103">page103</router-link>
+      <router-link to="/mission01">mission01</router-link>
+      <router-link to="/page108">page108</router-link>
+      <router-link to="/page110">page110</router-link> -->
     </nav>
     <main>
       <router-view/>
